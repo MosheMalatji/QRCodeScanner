@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRCodeScanner.Android", "QRCodeScanner\QRCodeScanner.Android\QRCodeScanner.Android.csproj", "{187E8CA8-26D3-446C-89B4-F811DC045191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRCodeScanner", "QRCodeScanner\QRCodeScanner\QRCodeScanner.csproj", "{000BE8D9-2438-4A1F-ABA0-564B95A70856}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{187E8CA8-26D3-446C-89B4-F811DC045191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187E8CA8-26D3-446C-89B4-F811DC045191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187E8CA8-26D3-446C-89B4-F811DC045191}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{187E8CA8-26D3-446C-89B4-F811DC045191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187E8CA8-26D3-446C-89B4-F811DC045191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187E8CA8-26D3-446C-89B4-F811DC045191}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{000BE8D9-2438-4A1F-ABA0-564B95A70856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000BE8D9-2438-4A1F-ABA0-564B95A70856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000BE8D9-2438-4A1F-ABA0-564B95A70856}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{000BE8D9-2438-4A1F-ABA0-564B95A70856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000BE8D9-2438-4A1F-ABA0-564B95A70856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{000BE8D9-2438-4A1F-ABA0-564B95A70856}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2093B0B-F343-4F80-8865-E1699312C20D}
+	EndGlobalSection
+EndGlobal
