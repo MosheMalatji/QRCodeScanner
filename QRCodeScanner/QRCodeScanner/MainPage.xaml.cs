@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZXing.Net.Mobile.Forms;
 
 namespace QRCodeScanner
 {
@@ -23,18 +24,33 @@ namespace QRCodeScanner
         {
             try
             {
-                var scanner = DependencyService.Get<IQrScanningService>();
-                var result = await scanner.ScanAsync();
-                if (result != null)
+                var ScannerPage = new ZXingScannerPage();
+                ScannerPage.OnScanResult += (result) =>
                 {
-                    txtBarcode.Text = result;
-                }
+                    ScannerPage.IsScanning = false;
+
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+
+                        Navigation.PopModalAsync();
+                        txtBarcode.Text = result.Text;
+                    });
+                };
+
+                await Navigation.PushModalAsync(ScannerPage);
+               
             }
             catch (Exception ex)
             {
                 throw;
             }
             
+        }
+
+        private void btnOpenUri_Clicked(object sender, EventArgs e)
+        {
+            
+            Device.OpenUri(new Uri(txtBarcode.Text));
         }
     }
 }

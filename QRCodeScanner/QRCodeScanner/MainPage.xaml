@@ -6,13 +6,16 @@
              mc:Ignorable="d"
              x:Class="QRCodeScanner.MainPage">
     <ContentPage.Content>
-    <StackLayout Spacing="10">
+    <StackLayout Spacing="10" Padding="7,7,7,7">
         <!-- Place new controls here -->
-        <Label Text="QR Scanner"/>
-        <Button Text="Click"
+        <Label Text="QR Scanner" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+        <Button Text="Scan"
                 x:Name="btnScan"
                 Clicked="btnScan_Clicked"/>
-        <Entry x:Name="txtBarcode" Placeholder="Text Do scan"/>
-    </StackLayout>
+        <Entry x:Name="txtBarcode" Placeholder="Address"/>
+        <Button Text="Go!"
+                x:Name="btnOpenUri"
+                Clicked="btnOpenUri_Clicked"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
